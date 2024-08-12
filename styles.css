@@ -5,14 +5,145 @@ LIGHT: #F1FAEE
 AQUA: #A8DADC
 LIGHT BLUE: #457B9D
 DARK BLUE: #1D3557
-
 */
 
 body {
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.hero-section {
+    background-image: url('images/koskela.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 720px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section h1 {
+    font-size: 2.5em;
+    margin: 0;
+    background-color: #1f4b7e;
+    padding: 10px;
+    border-radius: 2%;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    margin: 10px 0 0;
+    background-color: #457B9D;
+    padding: 10px;
+    border-radius: 2%;
+}
+
+.activities {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f0f7f4;
+    height: 720px;
+}
+
+.activities h2 {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.activity-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 200px;
     text-align: center;
 }
 
-img {
-    width: 100px;
+.card img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.card h3 {
+    font-size: 1.2em;
+    margin: 15px 0 10px;
+}
+
+.card p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.guide {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #e7f3f3;
+    height: 720px;
+    display: flex;
+    align-items: center;
+}
+
+.guide-card img {
+    border-radius: 8px;
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+.guide-name {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #1f4b7e;
+}
+
+#card {
+    border-radius: 15px;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    display: inline-flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #ddebf8;
+    color: #2b2839;
+    border-bottom: 6px solid #d8cefe;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.card-body {
+    margin: 20;
+}
+
+.card-body h3 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+}
+
+.card-body p {
+    margin: 0;
+}
+
+#card img {
+    width: 150px;
+    border-radius: 8px;
+    max-width: 100px;
+    margin-right: 20px;
 }
